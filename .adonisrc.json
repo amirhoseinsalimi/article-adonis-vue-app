@@ -29,7 +29,7 @@
     ".adonisrc.json",
     {
       "pattern": "resources/views/**/*.edge",
-      "reloadServer": false
+      "reloadServer": true
     },
     {
       "pattern": "public/**/css/*.css",
