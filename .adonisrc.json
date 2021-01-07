@@ -11,12 +11,18 @@
   "preloads": ["./start/routes", "./start/kernel"],
   "providers": ["./providers/AppProvider", "@adonisjs/core", "@adonisjs/session", "@adonisjs/view"],
   "metaFiles": [
+    ".env",
+    ".adonisrc.json",
     {
-      "pattern": "public/**",
+      "pattern": "resources/views/**/*.edge",
       "reloadServer": false
     },
     {
-      "pattern": "resources/views/**/*.edge",
+      "pattern": "public/**/css/*.css",
+      "reloadServer": false
+    },
+    {
+      "pattern": "public/**/js/*.js",
       "reloadServer": false
     }
   ],
