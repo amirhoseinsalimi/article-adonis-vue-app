@@ -15,13 +15,13 @@ export default new Router({
     {
       path: '/about',
       name: 'About',
-      component: require('@/views/About.vue'),
+      component: () => import('@/views/About.vue'),
     },
     // Should be the last route to handle 404
     {
       path: '*',
       name: 'NotFound',
-      component: require('@/views/NotFound.vue'),
+      component: () => import('@/views/NotFound.vue'),
     },
   ],
 })
