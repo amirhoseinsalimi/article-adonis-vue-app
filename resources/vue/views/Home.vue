@@ -4,7 +4,7 @@
 
     <hello-world />
 
-    <router-link to="/">Go to About page</router-link>
+    <router-link to="/about">Go to About page</router-link>
   </div>
 </template>
 
